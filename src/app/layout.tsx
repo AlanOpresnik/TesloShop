@@ -3,6 +3,7 @@ import { inter } from "@/config/fonts";
 import TopMenu from "@/components/ui/Top-menu/TopMenu";
 import "./globals.css";
 import SideBar from "@/components/ui/SideBar/SideBar";
+import Footer from "@/components/ui/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Teslo shop",
@@ -20,6 +21,7 @@ export default function RootLayout({
         <TopMenu />
         <SideBar />
         <div className="md:px-2 sm:px-6">{children}</div>
+        <Footer/>
       </body>
     </html>
   );
